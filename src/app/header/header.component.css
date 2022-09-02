@@ -1,0 +1,113 @@
+.main-header {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.main-header__title {
+    font-size: 80px;
+    letter-spacing: -1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header__title--blue {
+    color: var(--dark-blue);
+    font-size: 60px;
+}
+
+.main-header__title--orange {
+    color: var(--red);
+    font-size: 60px;
+}
+
+.main-header__menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-header__menu li {
+    cursor: pointer;
+}
+
+.main-header__menu a {
+    padding: 10px 10px;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.main-header__menu a:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+
+.container-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+#cart {
+    position: relative;
+}
+
+.badge-carrinho {
+    background-color: var(--dark-blue);
+    font-size: 0.5rem;
+    margin-left: 1px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -1px;
+    right: -4px;
+}
+
+.search-form {
+    height: 44px;
+    display: flex;
+}
+
+.search-form input {
+    box-sizing: border-box;
+    height: 20px;
+    padding: 20px;
+    margin: auto;
+    flex: 1;
+    background-color: var(--light-gray);
+    color: var(--gray);
+    outline: none;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    transition: all -3s ease-in-out;
+    font-size: 1.1rem;
+}
+
+.search-form button {
+    cursor: pointer;
+    width: 56px;
+    height: 40px;
+    margin: auto;
+    background-color: var(--dark-blue);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.search-form button:hover {
+    background-color: var(--blue);
+}

@@ -1,17 +1,29 @@
-<header>
-    <h1>
-        <span>LBJ</span><span>Geek Shop</span>
+<header class="main-header">
+    <h1 class="main-header__title">
+        <span class="main-header__title--orange">Geek</span>
+        <span class="main-header__title--blue">Shop</span>
     </h1>
-    <nav>
+
+    <form class="search-form">
+        <input type="text" placeholder="Buscar">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+    <nav class="main-header__menu">
         <ul>
             <li>
                 <a>Produtos</a>
             </li>
-            <li>
-                <a><i class="fa-solid fa-cart-shopping"></i></a>
-            </li>
+
             <li>
                 <a>Contato</a>
+            </li>
+            <li>
+                <a id="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="badge-carrinho">2</span>
+                </a>
+
             </li>
             <li>
                 <a><i class="fa-brands fa-facebook"></i></a>
@@ -27,4 +39,5 @@
             </li>
         </ul>
     </nav>
+
 </header>
