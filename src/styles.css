@@ -40,6 +40,7 @@ table{
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 :root {
     --red: #E65C4F;
     --blue: #78A6C8;
@@ -47,4 +48,29 @@ table{
     --gray: rgba(88, 89, 91, 1);
     --light-gray: #E9EEF2;
     --light-gray-2: rgba(247,247,247);
+}
+
+input:focus, textarea:focus, select:focus {
+	border: 1px solid rgba(0, 74, 124, 0.6);
+	outline: none;
+}
+
+textarea {
+	resize: none;
+}
+
+.error-message {
+    color: red;
+}
+
+.valid {
+    border: 1px solid var(--green);
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
+.invalid:focus {
+	border-color: red;
 }
