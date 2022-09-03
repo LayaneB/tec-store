@@ -12,14 +12,14 @@
     <nav class="main-header__menu">
         <ul>
             <li>
-                <a>Produtos</a>
+                <a routerLink="produtos">Produtos</a>
             </li>
 
             <li>
                 <a>Contato</a>
             </li>
             <li>
-                <a id="cart">
+                <a routerLink="carrinho"id="cart">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <span class="badge-carrinho">{{cartService.getItems().length}}</span>
                 </a>

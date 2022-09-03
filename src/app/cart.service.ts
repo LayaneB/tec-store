@@ -9,7 +9,8 @@ export class CartService {
   constructor() { }
 
   getItems (){
-    return JSON.parse(localStorage.getItem("cart") || "")
+    this.items = JSON.parse(localStorage.getItem("cart") || "[]")
+    return this.items
   }
 
   addCart(product: ICartProduct){
@@ -20,5 +21,10 @@ export class CartService {
   clearCart(){
     this.items = []
     localStorage.clear()
+  }
+  
+  deleteItem(productId: number){
+    this.items = this.items.filter(item => item.id !== productId)
+    localStorage.setItem("cart",JSON.stringify( this.items))
   }
 }
