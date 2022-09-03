@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.container i{
+    font-size: 15rem;
+}
+
+.container h2{
+    font-size: 3rem;
+}
