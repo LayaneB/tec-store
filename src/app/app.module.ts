@@ -9,19 +9,23 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatSnackBarModule} from '@angular/material/snack-bar'
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
     AppRouteModule,
     BrowserAnimationsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
